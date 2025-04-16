@@ -1,0 +1,24 @@
+// 🧠 Sort the people
+
+let names = ["akash", "sayan", "john"];
+
+let heights = [150, 180, 140];
+
+let myMap = new Map();
+
+for (let i = 0; i < names.length; i++) {
+  myMap.set(heights[i], names[i]);
+}
+
+heights.sort((a, b) => b - a);
+
+// console.log(height);
+
+let ans = new Array(names.length);
+
+for (let i = 0; i < heights.length; i++) {
+  ans[i] = myMap.get(heights[i]);
+}
+
+console.log(myMap);
+console.log(ans);

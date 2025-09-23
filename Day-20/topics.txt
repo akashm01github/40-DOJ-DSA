@@ -3,3 +3,32 @@
 3. filter ✅
 4. destructureing ✅
 5. spread and rest ✅
+
+
+###########################################################
+🔹 forEach Practice
+
+1. You have an array of numbers [2, 4, 6, 8]. Use forEach to print each number with the message:
+👉 "Number is 2", "Number is 4", etc.
+
+
+2. Given an array of names ["Akash", "Papan", "Jharnna"], use forEach to print:
+👉 "Hello Akash", "Hello Papan", "Hello Jharnna".
+
+
+🔹 map Practice
+
+1 . You have an array [1, 2, 3, 4]. Use map to create a new array where each number is doubled.
+👉 Expected result: [2, 4, 6, 8]
+
+2. Given ["apple", "banana", "mango"], use map to create an array of word lengths.
+👉 Expected result: [5, 6, 5]
+
+
+🔹 filter Practice
+
+1. You have [10, 15, 20, 25, 30]. Use filter to get only the even numbers.
+👉 Expected result: [10, 20, 30]
+
+2. Given ["cat", "elephant", "dog", "tiger"], use filter to keep only words with length greater than 3.
+👉 Expected result: ["elephant", "tiger"]

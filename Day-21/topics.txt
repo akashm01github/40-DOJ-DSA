@@ -1,0 +1,13 @@
+// OOPS  = Object Oriented Programming in JS
+
+1. OOPS Basics ✅
+
+2. Prototype 
+
+3. Class syntax practice
+
+4. Inheritance use 
+
+5. Encapsulation (private, getter, setter)
+
+6. Polymorphism

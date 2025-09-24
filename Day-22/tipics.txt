@@ -1,0 +1,28 @@
+1. Fetch API
+2. Axios
+3. Callbacks
+4. Promises
+5. Async/Await
+6. Event Loop
+7. Callbacks vs Promises cs Async/Await
+8. Generators 
+9. Error Handling 
+10. Web Workers
+11. AJAX
+
+
+###############################################
+//! If this keyword uses then it is a Asyncronus Code
+
+// Settimeout - নির্দিষ্ট সময় পর একবার কোনো কাজ চালায়
+
+// SetInterval - নির্দিষ্ট সময়ের ব্যবধানে বারবার কোনো কাজ চালায়
+
+// Fetch Api - নির্দিষ্ট API থেকে ডেটা আনা বা ডেটা পাঠানোর জন্য ব্যবহার হয়
+
+// Axios (or other HTTP Libraries) - Fetch API-এর মতোই কিন্তু ব্যবহার করা সহজ ও ডেভেলপার-ফ্রেন্ডলি
+
+// promise - ভবিষ্যতে কোনো কাজ শেষ হলে তার সফল বা ব্যর্থ ফলাফল ধরার একটি অবজেক্ট
+
+
+

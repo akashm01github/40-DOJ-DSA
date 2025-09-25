@@ -50,11 +50,11 @@ let parchi = new Promise(function (resolve, reject) {
                 reject();
             }
         })
-    
+
 })
 
 parchi
-.then(function(){
+.then(function(data){
     console.log("Black Button Pressed...")
 })
 .catch(function(){
@@ -62,3 +62,104 @@ parchi
 })
 
 
+// ! CallBacks
+function abcd(a,b){
+    console.log(a)
+    b();
+}
+
+abcd(1,function(){
+    console.log("This is Callback function");
+});
+
+
+//! How to use callbacks?
+// https://randomuser.me/api/
+function  doSomeAsyncTask(url,cb){
+    fetch(url)
+        .then(raw => raw.json())
+        .then(result => {
+            cb(result);
+        })
+}
+
+doSomeAsyncTask("https://randomuser.me/api/",function(result){
+    console.log(result.results[0])
+})
+
+
+// ! Async and Await
+async function abcd(){
+    let a = await fetch(`https://randomuser.me/api/`);
+    a = await a.json();
+    console.log(a.results[0])
+}
+
+abcd();
+
+
+
+//! Callback vs Promises cs Async/Await
+// https://randomuser.me/api/
+
+
+//todo: Callbacks
+
+function getData(url,cb){
+    fetch(url)
+    .then(res => res.json())
+    .then(result =>{
+        cb(result);
+    })
+}
+
+
+getData(`https://randomuser.me/api/`,function(data){
+        console.log(data.results[0])
+});
+
+//todo: Using Promises
+
+function dataFetcher(url) {
+    let parchi = new Promise(function (resolve, reject) {
+        fetch(url)
+            .then(res => res.json())
+            .then(result => {
+                resolve(result);
+            })
+    })
+
+    return parchi;
+
+}
+
+let parchi = dataFetcher(`https://randomuser.me/api/`);
+
+
+parchi
+    .then((data) => {
+        console.log(data.results[0])
+    })
+    .catch(() => {
+        console.log("Error")
+    })
+
+
+//todo: Using async and await
+
+
+async function abcd(url) {
+    let data = await fetch(url);
+
+    let result = await data.json();
+
+    return result;
+}
+
+
+async function hh() {
+    const data = await abcd(`https://randomuser.me/api/`)
+    console.log(data)
+}
+
+hh();

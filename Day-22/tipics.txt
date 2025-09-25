@@ -1,8 +1,8 @@
-1. Fetch API
-2. Axios
-3. Callbacks
-4. Promises
-5. Async/Await
+1. Fetch API ✅
+2. Axios ✅
+3. Callbacks ✅
+4. Promises ✅
+5. Async/Await ✅
 6. Event Loop
 7. Callbacks vs Promises cs Async/Await
 8. Generators 

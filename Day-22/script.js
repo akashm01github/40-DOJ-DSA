@@ -39,19 +39,19 @@ axios.get(`https://randomuser.me/api/`)
 
 
 //! Promises
-let parchi = new Promise(function (resolve, reject) {
-    fetch(`https://randomuser.me/api/`)
-        .then(raw => raw.json())
-        .then((result) =>{
-            if(result.results[0].gender == "male"){
-                resolve();
-            }
-            else{
-                reject();
-            }
-        })
+// let parchi = new Promise(function (resolve, reject) {
+//     fetch(`https://randomuser.me/api/`)
+//         .then(raw => raw.json())
+//         .then((result) =>{
+//             if(result.results[0].gender == "male"){
+//                 resolve();
+//             }
+//             else{
+//                 reject();
+//             }
+//         })
 
-})
+// })
 
 parchi
 .then(function(data){

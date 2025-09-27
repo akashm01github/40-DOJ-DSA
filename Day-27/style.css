@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.conatiner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.conatiner .light_box {
+  width: 400px;
+  height: 400px;
+  transform: rotate(180deg);
+}
+.conatiner .light_box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.conatiner .light_box .bubOn {
+  scale: 1.2;
+}
+.conatiner .btn_Box img {
+  width: 80px;
+  height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.conatiner .btn_Box img:active {
+  scale: 0.85;
+}
+.conatiner .btn_Box .glow {
+  filter: drop-shadow(0 0 20px yellow);
+  transform: scale(1.1);
+  /* little zoom effect */
+}

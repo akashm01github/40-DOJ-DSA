@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.conatiner {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+
+    .light_box {
+        // border: 2px solid black;
+        width: 400px;
+        height: 400px;
+
+        transform: rotate(180deg);
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .bubOn{
+            // background-color: red;
+            scale: 1.2;
+        }
+    }
+
+    .btn_Box {
+
+        // border: 2px solid black;
+        img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+
+            &:active {
+                scale: 0.85;
+            }
+        }
+
+        .glow {
+            filter: drop-shadow(0 0 20px yellow);
+            transform: scale(1.1);
+            /* little zoom effect */
+        }
+    }
+}
